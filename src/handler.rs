@@ -21,3 +21,7 @@ pub async fn index() -> impl Responder{
     //HttpResponse::Ok().body("Called index")
 }
 
+pub async fn not_found() -> impl Responder{
+    HttpResponse::NotFound().body("page not found!")
+}
+
